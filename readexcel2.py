@@ -10,7 +10,7 @@ completed = 'default'
 # Set the boundaries of the spreadsheet or write code to find the null cells
 # Statements could be shortened and combined, clunky and slow but functions
 # Should probably be written back to xls for manipulation or
-# improve strip and print
+# improve strip and print function
 
 ws = wb.active
 for row in ws.iter_rows(min_row=1, max_col=1, max_row=3):
