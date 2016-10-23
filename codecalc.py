@@ -1,5 +1,10 @@
 import time
 finished = 0
+answers = [300, 10, "25"]
+first = "null"
+second = "null"
+third = "null"
+inputs = []
 print "\n\n"
 print "You have executed the integrator code calculator. \n\n"
 
@@ -17,21 +22,26 @@ while finished < 1:
 
     name = raw_input("What is your name? ")
     print ""
-    first = raw_input("Enter the first coordinate: ")
+    first = raw_input("Enter the first answer: ")
     print ""
-    second = raw_input("Enter the second coordinate: ")
+    second = raw_input("Enter the second answer: ")
+    print ""
+    third = raw_input("Enter the third answer: ")
+
     first = int(first)
     second = int(second)
+    third = str(third)
+    inputs = [first, second, third]
     time.sleep(1)
+    print answers
+    print inputs
     print ""
     print "Calculating your answer... \n"
     time.sleep(1)
     for i in range(10, 0,-1):
         print i
         time.sleep(1)
-    if ((first == 300) and (second == 10)):
-
-
+    if answers == inputs:
         print "Congratulations %s, You cracked the code!!! \n\n" %name
 
         time.sleep(2)
@@ -39,7 +49,8 @@ while finished < 1:
         time.sleep(5)
 
         print "Combination = 12, 6, 3 \n\n"
-
+        print " ^ > < < ^ "
+        print "\n\n"
         print "Exiting Integrator Code \n\n"
         finished = 1
     else:
